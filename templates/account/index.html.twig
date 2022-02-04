@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte foothistorique{% endblock %}
+
+{% block content %}
+<h1>Mon compte</h1>
+
+Bienvenue {{app.user.firstname}} dans votre compte.<br/>
+C'est dans cet espace que vous allez pouvoir gérer toutes vos informations personnelles.
+<hr>
+<a href="{{ path('account_password') }}">Modifier password</a> <br/>
+-ajouter adressess
+-mes comandes
+<hr>
+
+{% endblock %}
